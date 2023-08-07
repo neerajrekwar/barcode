@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+div{
+    
+}
+
+#qrcode{
+    color: aquamarine;
+    inset: 10px;
+}
