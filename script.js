@@ -1,5 +1,11 @@
-document.getElementById(btn_generate).removeEventListener('click', function() {
-    var text = document.getElementById("txt_input").value;
+// javascript
 
-    JsBarcode("#barcode", text);
-});
+window.onresize = screen;
+window.onload = screen;
+
+function screen() {
+  myWidth = window.innerWidth;
+  myHeight = window.innerHeight;
+
+document.getElementById("screen-fit").innerHTML = 'Screen: ' + myWidth + "x" + myHeight + ' px';
+}
