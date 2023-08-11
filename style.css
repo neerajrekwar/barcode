@@ -3,13 +3,25 @@
   margin: 0;
   padding: 0;
   font-family: "Alata", sans-serif;
-  color: black;
+  color: #404040;
 }
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 body {
-  border: 2px solid darkblue;
+  margin: 0 auto;
   height: 100vh;
+  max-width: 50%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #404040;
+}
+h2{
+  margin-bottom: 30px;
+  text-align: center;
+}
+#txt{
+  font-size: .6em;
 }
 #qrcode {
   color: aquamarine;
