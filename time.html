@@ -19,13 +19,13 @@
         function startTime() {
             const today = new Date();
             //   let d = today.getMonth()+1;
-            let now = new Date().toLocaleDateString('en-uk', { weekday:"long", month:"short", day:"numeric"});
+            let now = new Date().toLocaleDateString('en-uk', { weekday: "long", month: "short", day: "numeric" });
             let h = today.getHours();
             let m = today.getMinutes();
             let s = today.getSeconds();
             m = checkTime(m);
             s = checkTime(s);
-            document.getElementById('txt').innerHTML = now + ", " + h + ":" + m + ":" + s;
+            document.getElementById('txt').innerHTML = now + " " + h + ":" + m + ":" + s;
             setTimeout(startTime, 1000);
         }
 
@@ -33,6 +33,8 @@
             if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
             return i;
         }
+        const event = new Date();
+        console.log(event.toLocaleTimeString('hi-IN'));
     </script>
 
 </body>
