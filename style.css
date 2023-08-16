@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Alata", sans-serif;
-  color: #404040;
+  color: #000;
 }
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
@@ -12,9 +12,10 @@ body {
   height: 100vh;
   max-width: 50%;
   display: grid;
+  
   place-content: center;
   text-align: center;
-  color: #404040;
+  color: #000;
 }
 body, a{
   text-decoration: none;
@@ -47,91 +48,69 @@ h2{
 
 
 /* ran pass start */
-
-.ram-pass-box {
-  background: #222;
-  height: 100vh;
-  display: flex;
+body {
+  background-color: #0581ca;
   justify-content: center;
   align-items: center;
-}
-
-::selection {
-  color: #222;
-  background: #ddd;
-}
-
-.generator {
-  width: 400px;
-  height: 200px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-direction: column;
+  min-height: 100vh;
 }
 
-.generator p {
-  color: #ddd;
-  font-size: 24px;
+.box{
+background-color: white;
+padding-top: 30px;
+padding: 30px;
+
+}
+.box h2{
+margin-bottom: 40px;
+text-align: center;
+font-size: 26px;
+color: #015a96;
+font-family: sans-serif;
 }
 
-.generator input {
-  width: 100%;
+input {
+padding: 20px;
+  user-select: none;
   height: 50px;
-  padding: 10px;
-  background: none;
-  outline: none;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  color: #ddd;
-  font-size: 18px;
-  letter-spacing: 1px;
-  transition: 0.2s;
-}
-
-.generator input.active {
-  border-color: #4dff4d;
-}
-
-.generator .buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.generator button {
-  position: relative;
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-transform: capitalize;
-  background: #0084ff;
-  color: #ddd;
+  width: 400px;
+  border-radius: 6px;
   border: none;
+  border: 2px solid rgb(13, 152, 245);
+  outline: none;
+  font-size: 22px;
+}
+input::placeholder{
+font-size: 23px;
+} 
+
+#button {
+  font-family: sans-serif;
+  font-size: 15px;
+
+  margin-top: 40px;
+  border: 2px solid rgb(20, 139, 250);
+  width: 155px;
+  height: 50px;
+  text-align: center;
+  background-color: #0c81ee;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  letter-spacing: 1px;
-  font-size: 18px;
-  font-weight: bold;
-  transition: 0.2s;
+  border-radius: 7px;
+
+
+}
+.btn2{
+margin-left: 85px
 }
 
-.generator button:hover {
-  background: #0d72d1;
+#button:hover {
+  color: white;
+  background-color: black;
 }
-
-.generator #btncp::before {
-  position: absolute;
-  content: "Copied";
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  color: #4dff4d;
-  transition: 0.2s linear;
-  z-index: -1;
-}
-
-.generator input.active ~ .buttons #btncp::before {
-  left: -70px;
-}
-
 
 /* ran pass end */
